@@ -13,6 +13,7 @@ import org.junit.runners.Parameterized.Parameters;
 @RunWith(Parameterized.class)
 public class StringHelperParametrizedTest extends TestCase {
 
+	
 	StringHelper stringHelper = new StringHelper();
 	
 	private String input;

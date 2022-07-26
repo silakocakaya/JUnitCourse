@@ -15,10 +15,20 @@ public class ArraysCompareTest {
 		int[] expected = {1,3,5,12};
 		
 		Arrays.sort(numbers);
+		assertArrayEquals(expected, numbers);
+	}
+	
+	
+	@Test
+	public void testArrays_RandomArrays2() {
 		
+		int[] numbers = {1,5,3,12};
+		int[] expected = {1,3,5,12};
+		
+		Arrays.sort(numbers);
 		//assertEqual objenin de eşit olup olmamasına bakar
 		//assertEquals(expected, numbers);
-		assertArrayEquals(expected, numbers);
+		assertEquals(expected, numbers);
 	}
 	
 	//Testin null pointer exception atmasi beklenmektedir.

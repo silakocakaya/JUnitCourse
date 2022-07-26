@@ -27,13 +27,18 @@ public class StringHelperTest extends TestCase {
 	
 	@Test
 	public void testAreFirstAndLastTwoCharactersTheSame_BasicNegativeValues() {
+		
 		assertFalse(stringHelper.areFirstAndLastTwoCharactersTheSame("A"));
 		assertFalse("ABCD should be false", stringHelper.areFirstAndLastTwoCharactersTheSame("ABCD"));
 	}
 	
 	@Test
 	public void testAreFirstAndLastTwoCharactersTheSame_BasicPositiveValues() {
-		assertTrue(stringHelper.areFirstAndLastTwoCharactersTheSame("AB"));
 		assertTrue("ABAB should be true", stringHelper.areFirstAndLastTwoCharactersTheSame("ABAB"));
+	}
+	
+	@Test
+	public void testAreFirstAndLastTwoCharactersTheSame_BasicPositiveValues2() {
+		assertTrue("ABAB should be true", stringHelper.areFirstAndLastTwoCharactersTheSame("AB"));
 	}
 }
